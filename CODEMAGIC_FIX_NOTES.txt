@@ -1,0 +1,5 @@
+Исправления для Codemagic:
+1. Убран шаг ручной установки Android SDK packages, потому что на Linux-машинах Codemagic build-tools 36.0.0 и platform 36 уже предустановлены.
+2. Добавлен instance_type: linux_x2.
+3. sdk.dir теперь указывает на /usr/local/share/android-sdk.
+4. Сборка переведена на AGP 8.13.2 + Gradle 8.13, чтобы не тянуть Gradle 9.3.1 и не упираться в несовместимость AGP 9 с org.jetbrains.kotlin.android.
